@@ -1,0 +1,19 @@
+{
+  "name": "genrstval",
+  "version": "1.0.0",
+  "description": "random stock value generation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nothing"
+  ],
+  "author": "Rakesh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.19.3",
+    "node-cron": "^4.2.1"
+  }
+}
