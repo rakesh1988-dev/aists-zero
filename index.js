@@ -170,7 +170,7 @@ app.listen(3000,()=> {console.log("started")})
       // myFunctionToRunDaily();
     });
 
-   cron.schedule('30 10 * * *', () => {
+   cron.schedule('35 10 * * *', () => {
         console.log('Running a task daily at 10:30 AM');
         // Place your desired logic here
         // For example, calling a function, processing data, etc.
