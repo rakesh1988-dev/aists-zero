@@ -158,7 +158,7 @@ const app = exp();
 
 app.get("/data",async(req,res)=> {
   let data = await Symbol.find().sort({Rank:1})
-  data = data?.filter((item)=> item?.Values.length > 8)
+  data = data?.filter((item)=> item?.Values?.length > 8)
   res.send(data)
 })
 
