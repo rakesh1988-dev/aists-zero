@@ -151,7 +151,7 @@ async function assignRank() {
 }
 
 const reset = async()=> {
-  Symbol.updateMany({},{$set:{Values:[]}})
+  await Symbol.updateMany({},{$set:{Values:[]}})
 }
 
 const app = exp();
