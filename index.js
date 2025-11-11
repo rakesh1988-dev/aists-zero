@@ -157,7 +157,8 @@ const reset = async()=> {
 const app = exp();
 
 app.get("/data",async(req,res)=> {
-  const data = await Symbol.find().sort({Rank:1})
+  let data = await Symbol.find().sort({Rank:1})
+  data = data?.filter((item)=> item?.Values.length > 8)
   res.send(data)
 })
 
