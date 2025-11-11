@@ -164,7 +164,7 @@ app.get("/data",async(req,res)=> {
 
 app.listen(3000,()=> {console.log("started")})
 
- cron.schedule('0 9 * * *', () => {
+ cron.schedule('19 9 * * *', () => {
       console.log('Running a daily task at 9 AM:', new Date().toLocaleString());
       reset()
       // For example, you could call a function to perform a specific operation
